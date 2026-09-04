@@ -1,69 +1,120 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Tools Hub</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f2f5ff;
-            text-align: center;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
 
-        header {
-            padding: 60px 20px;
-            background: #4f46e5;
-            color: white;
-        }
+header {
+    background: #4f46e5;
+    color: white;
+    text-align: center;
+    padding: 45px 15px;
+}
 
-        h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
 
-        p {
-            font-size: 18px;
-        }
+header p {
+    font-size: 18px;
+}
 
-        .card {
-            background: white;
-            max-width: 500px;
-            margin: 40px auto;
-            padding: 30px;
-            border-radius: 15px;
-        }
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 15px;
+}
 
-        button {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
-            background: #4f46e5;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
+.tool {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #ddd;
+}
 
-        button:hover {
-            background: #3730a3;
-        }
-    </style>
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 12px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+}
+
+.result {
+    margin-top: 15px;
+    font-weight: bold;
+}
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Welcome to My Website 🚀</h1>
-        <p>यह मेरी पहली वेबसाइट है!</p>
-    </header>
+<header>
+    <h1>🚀 Free Tools Hub</h1>
+    <p>Useful tools — बिल्कुल free</p>
+</header>
 
-    <div class="card">
-        <h2>नमस्ते 👋</h2>
-        <p>मैं धीरे-धीरे Web Development सीख रहा हूँ।</p>
-        <button>Click Me</button>
+<div class="container">
+
+    <div class="tool">
+        <h2>📝 Text Counter</h2>
+        <textarea id="text" placeholder="यहाँ अपना text लिखें..."></textarea>
+        <button onclick="countText()">Count Text</button>
+        <div class="result" id="result"></div>
     </div>
+
+    <div class="tool">
+        <h2>🧮 Simple Calculator</h2>
+        <input id="num1" type="number" placeholder="पहला नंबर">
+        <input id="num2" type="number" placeholder="दूसरा नंबर">
+        <br>
+        <button onclick="add()">Add +</button>
+        <div class="result" id="calc"></div>
+    </div>
+
+</div>
+
+<script>
+function countText() {
+    let text = document.getElementById("text").value;
+    let words = text.trim() === "" ? 0 : text.trim().split(/\s+/).length;
+    let characters = text.length;
+
+    document.getElementById("result").innerHTML =
+        "Words: " + words + " | Characters: " + characters;
+}
+
+function add() {
+    let a = Number(document.getElementById("num1").value);
+    let b = Number(document.getElementById("num2").value);
+
+    document.getElementById("calc").innerHTML =
+        "Result: " + (a + b);
+}
+</script>
 
 </body>
 </html>
