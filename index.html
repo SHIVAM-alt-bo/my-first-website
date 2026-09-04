@@ -1,506 +1,506 @@
 <!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Best Products & Deals</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6fb;
-            color: #222;
-        }
-
-        header {
-            background: #414a65;
-            color: white;
-            text-align: center;
-            padding: 30px 15px;
-        }
-
-        header h1 {
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 16px;
-        }
-
-        nav {
-            background: white;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #414a65;
-            font-weight: bold;
-            margin: 0 12px;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 0 15px;
-        }
-
-        .intro {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .intro h2 {
-            color: #414a65;
-            margin-bottom: 10px;
-        }
-
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 20px;
-        }
-
-        .product {
-            background: white;
-            border-radius: 12px;
-            padding: 18px;
-            text-align: center;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.10);
-        }
-
-        .product img {
-            width: 100%;
-            height: 180px;
-            object-fit: contain;
-            margin-bottom: 12px;
-        }
-
-        .product h3 {
-            margin-bottom: 10px;
-        }
-
-        .product p {
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .price {
-            color: #27ae60;
-            font-size: 21px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        .buy-btn {
-            display: inline-block;
-            background: #007bff;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 7px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .buy-btn:hover {
-            background: #0056b3;
-        }
-
-        .disclosure {
-            background: #fff8e1;
-            border-left: 5px solid #f0ad00;
-            padding: 18px;
-            margin-top: 35px;
-            border-radius: 6px;
-            font-size: 14px;
-        }
-
-        footer {
-            margin-top: 40px;
-            background: #414a65;
-            color: white;
-            text-align: center;
-            padding: 25px 15px;
-        }
-
-        footer a {
-            color: white;
-            margin: 0 8px;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <h1>🛍️ Best Products & Deals</h1>
-    <p>Useful products और शानदार deals एक जगह</p>
-</header>
-
-<nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#about">About</a>
-    <a href="#disclosure">Affiliate Disclosure</a>
-</nav>
-
-<div class="container" id="home">
-
-    <section class="intro">
-        <h2>हमारे Recommended Products</h2>
-        <p>
-            हमने आपके लिए कुछ useful और popular products चुने हैं।
-            Product की जानकारी देखने और खरीदने के लिए नीचे दिए गए
-            Buy Now button पर क्लिक करें।
-        </p>
-    </section>
-
-    <section id="products">
-
-        <div class="products">
-
-            <!-- PRODUCT 1 -->
-            <div class="product">
-
-                <img src="PRODUCT_IMAGE_URL_1"
-                     alt="Product 1">
-
-                <h3>Product Name 1</h3>
-
-                <p>
-                    इस product की छोटी और useful जानकारी यहाँ लिखें।
-                </p>
-
-                <div class="price">
-                    ₹1,299
-                </div>
-
-                <a href="YOUR_AFFILIATE_LINK_1"
-                   target="_blank"
-                   rel="nofollow sponsored noopener"
-                   class="buy-btn">
-                    Buy Now
-                </a>
-
-            </div>
-
-
-            <!-- PRODUCT 2 -->
-            <div class="product">
-
-                <img src="PRODUCT_IMAGE_URL_2"
-                     alt="Product 2">
-
-                <h3>Product Name 2</h3>
-
-                <p>
-                    इस product की छोटी और useful जानकारी यहाँ लिखें।
-                </p>
-
-                <div class="price">
-                    ₹1,499
-                </div>
-
-                <a href="YOUR_AFFILIATE_LINK_2"
-                   target="_blank"
-                   rel="nofollow sponsored noopener"
-                   class="buy-btn">
-                    Buy Now
-                </a>
-
-            </div>
-
-
-            <!-- PRODUCT 3 -->
-            <div class="product">
-
-                <img src="PRODUCT_IMAGE_URL_3"
-                     alt="Product 3">
-
-                <h3>Product Name 3</h3>
-
-                <p>
-                    इस product की छोटी और useful जानकारी यहाँ लिखें।
-                </p>
-
-                <div class="price">
-                    ₹899
-                </div>
-
-                <a href="YOUR_AFFILIATE_LINK_3"
-                   target="_blank"
-                   rel="nofollow sponsored noopener"
-                   class="buy-btn">
-                    Buy Now
-                </a>
-
-            </div>
-
-
-            <!-- PRODUCT 4 -->
-            <div class="product">
-
-                <img src="PRODUCT_IMAGE_URL_4"
-                     alt="Product 4">
-
-                <h3>Product Name 4</h3>
-
-                <p>
-                    इस product की छोटी और useful जानकारी यहाँ लिखें।
-                </p>
-
-                <div class="price">
-                    ₹999
-                </div>
-
-                <a href="YOUR_AFFILIATE_LINK_4"
-                   target="_blank"
-                   rel="nofollow sponsored noopener"
-                   class="buy-btn">
-                    Buy Now
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="about" class="intro" style="margin-top:35px;">
-
-        <h2>About Us</h2>
-
-        <p>
-            हम useful products और deals खोजकर अपने visitors
-            के साथ share करते हैं।
-        </p>
-
-    </section>
-
-
-    <section id="disclosure" class="disclosure">
-
-        <strong>Affiliate Disclosure:</strong>
-
-        <p>
-            इस वेबसाइट पर कुछ links affiliate links हो सकते हैं।
-            यदि आप हमारे affiliate link के माध्यम से कोई product
-            खरीदते हैं, तो हमें commission मिल सकता है।
-            आपके लिए कोई अतिरिक्त शुल्क नहीं लगेगा।
-        </p>
-
-    </section>
-
-</div>
-
-
-<footer>
-
-    <p>© 2026 Best Products & Deals</p>
-
-    <p style="margin-top:10px;">
-        <a href="#">Privacy Policy</a>
-        |
-        <a href="#">Terms & Conditions</a>
-    </p>
-
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Best Products - Affiliate Store</title>
+  <title>SmartDeal India - Best Deals & Products</title>
+  <meta name="description" content="Discover useful products, best deals and smart shopping recommendations from SmartDeal India.">
 
   <style>
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
+      font-family: Arial, sans-serif;
     }
 
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background: #f5f6f8;
       color: #222;
     }
 
     header {
-      background: #111;
+      background: #111827;
       color: white;
-      text-align: center;
-      padding: 25px 15px;
+      padding: 18px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    header p {
-      margin: 8px 0 0;
-      color: #ddd;
-    }
-
-    .container {
+    .nav {
       max-width: 1100px;
-      margin: 30px auto;
-      padding: 0 15px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #f59e0b;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #f59e0b;
+    }
+
+    .hero {
+      background: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #f59e0b;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #666;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .search-box {
+      max-width: 600px;
+      margin: 30px auto 0;
+      display: flex;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 8px 0 0 8px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 14px 22px;
+      border: none;
+      background: #f59e0b;
+      color: white;
+      font-weight: bold;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 45px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: #777;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .category {
+      background: white;
+      padding: 25px 15px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .category:hover {
+      transform: translateY(-4px);
+    }
+
+    .category .icon {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .category h3 {
+      font-size: 16px;
     }
 
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
     }
 
-    .product-card {
+    .product {
       background: white;
-      border-radius: 15px;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-      transition: 0.3s;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+      transition: 0.2s;
     }
 
-    .product-card:hover {
+    .product:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 22px rgba(0,0,0,0.18);
     }
 
     .product-image {
-      width: 100%;
-      height: 280px;
-      object-fit: contain;
-      background: #fff;
-      padding: 15px;
+      height: 210px;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+    }
+
+    .product-image span {
+      font-size: 50px;
     }
 
     .product-info {
       padding: 18px;
     }
 
-    .product-info h2 {
-      font-size: 20px;
-      margin: 0 0 10px;
+    .product-info h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
     }
 
     .price {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
-      margin: 10px 0;
+      margin-bottom: 8px;
     }
 
     .rating {
-      color: #f39c12;
+      color: #f59e0b;
       margin-bottom: 10px;
     }
 
     .description {
-      color: #666;
-      line-height: 1.5;
+      color: #777;
       font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 15px;
     }
 
     .buy-btn {
       display: block;
       text-align: center;
-      text-decoration: none;
-      background: #ff3f6c;
+      background: #111827;
       color: white;
-      padding: 13px;
-      border-radius: 8px;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 7px;
       font-weight: bold;
-      margin-top: 15px;
     }
 
     .buy-btn:hover {
-      background: #e8325b;
+      background: #f59e0b;
     }
 
-    .note {
+    .empty {
+      grid-column: 1 / -1;
+      background: white;
       text-align: center;
-      font-size: 12px;
+      padding: 50px 20px;
+      border-radius: 12px;
       color: #777;
-      margin-top: 30px;
-      padding-bottom: 20px;
+    }
+
+    .info-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    footer {
+      background: #111827;
+      color: #ddd;
+      margin-top: 60px;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    footer h2 {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin: 8px 0;
+    }
+
+    .footer-links {
+      margin-top: 15px;
+    }
+
+    .footer-links a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .footer-links a:hover {
+      color: #f59e0b;
+    }
+
+    @media (max-width: 800px) {
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .categories {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      nav a {
+        margin-left: 8px;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .categories {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 45px 15px;
+      }
     }
   </style>
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header>
-    <h1>🛍️ Best Products</h1>
-    <p>Best products at great prices</p>
+    <div class="nav">
+      <div class="logo">Smart<span>Deal</span> India</div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Find <span>Smart Deals</span> in India</h1>
 
-    <div class="products">
+    <p>
+      Discover useful products, popular items and smart shopping
+      recommendations — all in one place.
+    </p>
 
-      <!-- PRODUCT 1 -->
-      <div class="product-card">
+    <div class="search-box">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        onkeyup="searchProducts()"
+      >
+      <button onclick="searchProducts()">Search</button>
+    </div>
+  </section>
 
-        <img
-          class="product-image"
-          src="https://photos.app.goo.gl/q7eUWim35Cx7zpw89"
-          alt="Featured Product"
-        >
+  <!-- CATEGORIES -->
+  <section class="section" id="categories">
 
-        <div class="product-info">
+    <div class="section-title">
+      <h2>Shop by Category</h2>
+      <p>Explore products by category</p>
+    </div>
 
-          <h2>Featured Product</h2>
+    <div class="categories">
 
-          <div class="rating">
-            ⭐⭐⭐⭐⭐
-          </div>
+      <div class="category">
+        <div class="icon">📱</div>
+        <h3>Mobiles</h3>
+      </div>
 
-          <div class="price">
-            ₹999
-          </div>
+      <div class="category">
+        <div class="icon">🎧</div>
+        <h3>Electronics</h3>
+      </div>
 
-          <p class="description">
-            Check out this amazing product on Myntra.
-            Click the button below to see the latest price and product details.
-          </p>
+      <div class="category">
+        <div class="icon">💻</div>
+        <h3>Laptops</h3>
+      </div>
 
-          <a
-            class="buy-btn"
-            href="https://myntr.it/GnCA2kT"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-          >
-            🛒 Buy Now
-          </a>
-
-        </div>
+      <div class="category">
+        <div class="icon">🏠</div>
+        <h3>Home & Living</h3>
       </div>
 
     </div>
+  </section>
 
-    <div class="note">
-      Affiliate Disclosure: We may earn a commission when you purchase through
-      our links. Product prices may change on the shopping website.
+  <!-- PRODUCTS -->
+  <section class="section" id="products">
+
+    <div class="section-title">
+      <h2>Featured Products</h2>
+      <p>Our recommended products will appear here</p>
     </div>
 
-  </div>
+    <div class="products" id="productList">
+
+      <!--
+        ============================================
+        PRODUCTS WILL BE ADDED HERE LATER
+        ============================================
+
+        Example:
+
+        <div class="product">
+          <div class="product-image">
+            <img src="PHOTO-LINK"
+                 alt="Product Name"
+                 style="width:100%;height:100%;object-fit:contain;">
+          </div>
+
+          <div class="product-info">
+            <h3>Product Name</h3>
+
+            <div class="price">₹1,499</div>
+
+            <div class="rating">★★★★★</div>
+
+            <div class="description">
+              Short product description goes here.
+            </div>
+
+            <a href="AFFILIATE-LINK"
+               class="buy-btn"
+               target="_blank"
+               rel="nofollow sponsored">
+              Buy Now
+            </a>
+          </div>
+        </div>
+      -->
+
+      <div class="empty" id="emptyMessage">
+        🛍️ Products will be added here soon.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section">
+
+    <div class="section-title">
+      <h2>About SmartDeal India</h2>
+    </div>
+
+    <div class="info-box">
+      SmartDeal India is a product discovery and affiliate shopping website.
+      We help users discover useful products and deals available online.
+
+      <br><br>
+
+      Some links on this website may be affiliate links. If you purchase
+      a product through our affiliate link, we may receive a commission
+      at no additional cost to you.
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <h2>SmartDeal India</h2>
+
+    <p>Smart Shopping. Better Choices.</p>
+
+    <p>© 2026 SmartDeal India. All Rights Reserved.</p>
+
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Affiliate Disclosure</a>
+      <a href="#">Contact</a>
+    </div>
+
+  </footer>
+
+
+  <!-- SEARCH SCRIPT -->
+  <script>
+
+    function searchProducts() {
+
+      const input =
+        document.getElementById("searchInput").value.toLowerCase();
+
+      const products =
+        document.querySelectorAll(".product");
+
+      products.forEach(function(product) {
+
+        const text =
+          product.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+          product.style.display = "";
+        } else {
+          product.style.display = "none";
+        }
+
+      });
+
+    }
+
+  </script>
 
 </body>
 </html>
